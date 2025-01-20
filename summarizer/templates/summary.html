@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Summary</title>
+</head>
+<body>
+    <center>
+        <h1>Document Summary Assistant</h1>
+    </center>
+    <h3>Summary:</h3>
+    <div class="summary">{{ summary }}</div>
+
+    <h3>Key Points:</h3>
+    <ul>
+        {% for point in key_points %}
+            <li>{{ point }}</li>
+        {% empty %}
+            <li>No key points found.</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'upload_document' %}">Upload another document</a>
+</body>
+</html>
