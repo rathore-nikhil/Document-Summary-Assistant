@@ -16,6 +16,14 @@ The Document Summary Assistant is a web application built using Django that allo
 * **Text Processing:** Hugging Face Transformers, PyMuPDF, Tesseract OCR
 * **Database:** SQLite
 
+## Screenshots
+### Upload Document or Image
+![image](https://github.com/user-attachments/assets/66ba534c-7f02-4930-9bfc-24b7fe2a7b82)
+### The Document Summary Assistant generates concise summaries by highlighting the key points of documents or images.
+![image](https://github.com/user-attachments/assets/13257b9f-73bf-4312-8f6b-713f737ba74e)
+
+
+
 ## Installation
 ### Prerequisites
 * Python 3.8 or higher
